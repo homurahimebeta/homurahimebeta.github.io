@@ -43,12 +43,19 @@
         section {
             padding: 40px 20px;
         }
-        img, video {
+        img, video, .gif-container {
             width: 80%;
             max-width: 800px;
             margin: 20px auto;
             display: block;
             border-radius: 10px;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
         }
         footer {
             background: #222;
@@ -64,41 +71,32 @@
         <a href="https://yourwebsite.com/download" class="download-button">Download Beta</a>
     </header>
     
+    <section id="media" class="gallery">
+        <div class="gif-container"><img src="gif1.gif" alt="Homura Hime Action 1"></div>
+    </section>
+    
     <section id="about">
-        <h2>About the Game</h2>
-        <p>Homura Hime is a 3D action game with anime-style visuals and intense combat. Players control Homura Hime as she battles corrupted demon girls and uncovers the mysteries of her past.</p>
+        <h2>Story</h2>
+        <p>Welcome to a world where humans and demons coexist. Souls harboring strong emotions and deep regrets at their time of death are transformed into archdemons. Archdemons have the power to corrupt the foundation of the world and contaminate their surroundings. Creatures tainted by this demonic power turn into lowly monsters that operate solely on raw instinct.</p>
+        <p>Faced with the threat to the world posed by five extremely powerful demon girls, the High Priestess is forced to dispatch Homura Hime—the "Flame Princess" and the strongest exorcist of them all—and her aide, Ann, who are now entrusted with the divine mission of purifying the world and defeating all demons.</p>
+    </section>
+    
+    <section id="media" class="gallery">
+        <div class="gif-container"><img src="gif2.gif" alt="Homura Hime Action 2"></div>
     </section>
     
     <section id="features">
-        <h2>Features</h2>
+        <h2>Game Features</h2>
         <ul>
-            <li>Exciting and intense combo-based combat</li>
-            <li>Challenging 3D bullet hell attacks</li>
-            <li>Special weapons and equipment</li>
-            <li>Deep and immersive storyline</li>
+            <li>Immerse yourself in exhilarating and intense combo attack action</li>
+            <li>Survive challenging and beautiful 3D bullet hell attacks</li>
+            <li>Defeat archdemon girls to unlock special weapons and equipment</li>
+            <li>Take down the demons and reveal the truth about this world</li>
         </ul>
     </section>
     
-    <section id="media">
-        <h2>Gallery & Video</h2>
-        <img src="image1.jpg" alt="Homura Hime Screenshot 1">
-        <img src="image2.jpg" alt="Homura Hime Screenshot 2">
-        <video controls>
-            <source src="trailer.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-    
-    <section id="requirements">
-        <h2>System Requirements</h2>
-        <p><strong>Minimum:</strong> Windows 10, Intel Core i5, 8GB RAM, GTX 960</p>
-        <p><strong>Recommended:</strong> Windows 10, Intel Core i7, 16GB RAM, GTX 1060</p>
-    </section>
-    
-    <section id="download">
-        <h2>Download Beta Version</h2>
-        <p>Try the beta version of Homura Hime now!</p>
-        <a href="https://yourwebsite.com/download" class="download-button">Download Now</a>
+    <section id="media" class="gallery">
+        <div class="gif-container"><img src="gif3.gif" alt="Homura Hime Action 3"></div>
     </section>
     
     <footer>
