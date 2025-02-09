@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Official website of Homura Hime - A thrilling 3D action game with anime-style visuals and intense combat. Coming soon on Steam!">
-    <meta name="keywords" content="Homura Hime, action game, anime, Steam, 3D combat, bullet hell, RPG, fantasy, adventure, indie game, Japanese game, fast-paced combat, anime fighting game, action RPG, hack and slash, story-driven game, PC gaming, Homura Hime game, Homura Hime beta, Homura Hime download, Homura Hime Steam, Homura Hime free download, Homura Hime PC game, Homura Hime release date, Homura Hime official site, Homura Hime gameplay">
+    <meta name="keywords" content="Homura Hime, action game, anime, Steam, 3D combat, bullet hell, RPG, fantasy, adventure, indie game, Japanese game, fast-paced combat, anime fighting game, action RPG, hack and slash, story-driven game, PC gaming">
     <meta name="author" content="Homura Hime Team">
     <title>Homura Hime - Official Website</title>
     <link rel="stylesheet" href="styles.css">
@@ -14,52 +14,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('website.jpg') no-repeat center center/cover;
+            background: url('background.gif') no-repeat center center/cover;
             color: white;
             text-align: center;
         }
-        header {
-            background: url('website.jpg') no-repeat center center/cover;
-            padding: 50px;
-            position: relative;
-        }
-        .logo {
-            width: 150px;
-            height: auto;
-            display: block;
-            margin: 0 auto 20px;
-        }
-        header h1 {
-            font-size: 3.5rem;
-        }
-        .download-button, .steam-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #ff4c4c;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .download-button:hover, .steam-button:hover {
-            background-color: #d43f3f;
-        }
-        .steam-button {
-            right: auto;
-            left: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .steam-button img {
-            width: 20px;
-            height: 20px;
-        }
-        section {
-            padding: 60px 20px;
+        .story-section {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 900px;
         }
         h2 {
             font-size: 2.5rem;
@@ -71,83 +35,43 @@
             margin: 0 auto 20px;
             line-height: 1.6;
         }
-        .media-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .gif-container {
-            background: #222;
-            padding: 10px;
-            border-radius: 10px;
-            width: 30%;
-        }
-        .gif-container img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .gallery-slider {
-            overflow-x: auto;
-            white-space: nowrap;
-            padding: 20px 0;
-        }
-        .gallery-slider img {
-            display: inline-block;
-            width: 300px;
-            height: auto;
-            margin-right: 15px;
-            border-radius: 10px;
-        }
-        footer {
-            background: #222;
-            padding: 30px;
-            margin-top: 40px;
-        }
-        .bottom-download {
-            display: inline-block;
-            background-color: #ff4c4c;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: 0.3s;
-            margin-top: 20px;
-        }
-        .bottom-download:hover {
-            background-color: #d43f3f;
-        }
     </style>
 </head>
 <body>
     <header>
-        <a href="https://store.steampowered.com/app/yourgameid" class="steam-button">
-            <img src="steam-logo.png" alt="Steam Logo"> Add to Steam Wishlist
-        </a>
         <img src="logo.png" alt="Homura Hime Logo" class="logo">
         <h1>Homura Hime</h1>
         <p>Coming soon on Steam! Try the beta version on our website.</p>
-        <a href="https://yourwebsite.com/download" class="download-button">Download Beta</a>
     </header>
     
-    <section id="media" class="media-container">
-        <div class="gif-container">
+    <section id="media">
+        <div>
             <img src="gif1.gif" alt="Homura Hime Action 1">
             <p>Adventure Mode</p>
         </div>
-        <div class="gif-container">
+        <div>
             <img src="gif2.gif" alt="Homura Hime Action 2">
             <p>Battle Mode</p>
         </div>
-        <div class="gif-container">
+        <div>
             <img src="gif3.gif" alt="Homura Hime Action 3">
             <p>Casual Mode</p>
         </div>
     </section>
     
+    <section class="story-section">
+        <h2>Story</h2>
+        <p>Welcome to a world where humans and demons coexist. Souls harboring strong emotions and deep regrets at their time of death are transformed into archdemons...</p>
+        <h2>Game Features</h2>
+        <p>Immerse yourself in exhilarating and intense combo attack action</p>
+        <p>Survive challenging and beautiful 3D bullet hell attacks</p>
+        <p>Defeat archdemon girls to unlock special weapons and equipment</p>
+        <p>Take down the demons and reveal the truth about this world</p>
+    </section>
+    
     <section id="gallery">
         <h2>Gallery</h2>
-        <div class="gallery-slider">
+        <div>
             <img src="image1.png" alt="Gallery Image 1">
             <img src="image2.png" alt="Gallery Image 2">
             <img src="image3.png" alt="Gallery Image 3">
@@ -160,7 +84,6 @@
     
     <footer>
         <p>&copy; 2025 Homura Hime. All rights reserved.</p>
-        <a href="https://yourwebsite.com/download" class="bottom-download">Download Beta</a>
     </footer>
 </body>
 </html>
