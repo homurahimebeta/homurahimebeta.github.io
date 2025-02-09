@@ -8,13 +8,13 @@
     <meta name="author" content="Homura Hime Team">
     <title>Homura Hime - Official Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
+            background-color: #181818;
             color: white;
             text-align: center;
         }
@@ -30,9 +30,9 @@
             margin: 0 auto 20px;
         }
         header h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
-        .download-button {
+        .download-button, .steam-button {
             position: absolute;
             top: 20px;
             right: 20px;
@@ -44,16 +44,37 @@
             border-radius: 8px;
             transition: 0.3s;
         }
-        .download-button:hover {
+        .download-button:hover, .steam-button:hover {
             background-color: #d43f3f;
         }
+        .steam-button {
+            right: auto;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .steam-button img {
+            width: 20px;
+            height: 20px;
+        }
         section {
-            padding: 40px 20px;
+            padding: 60px 20px;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
         }
         img, video, .gif-container {
             width: 80%;
             max-width: 800px;
-            margin: 20px auto;
+            margin: 30px auto;
             display: block;
             border-radius: 10px;
         }
@@ -61,18 +82,34 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
-            padding: 20px;
+            gap: 30px;
         }
         footer {
             background: #222;
-            padding: 20px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        .bottom-download {
+            display: inline-block;
+            background-color: #ff4c4c;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
             margin-top: 20px;
+        }
+        .bottom-download:hover {
+            background-color: #d43f3f;
         }
     </style>
 </head>
 <body>
     <header>
+        <a href="https://store.steampowered.com/app/yourgameid" class="steam-button">
+            <img src="steam-logo.png" alt="Steam Logo"> Add to Steam Wishlist
+        </a>
         <img src="logo.png" alt="Homura Hime Logo" class="logo">
         <h1>Homura Hime</h1>
         <p>Coming soon on Steam! Try the beta version on our website.</p>
@@ -85,8 +122,8 @@
     
     <section id="about">
         <h2>Story</h2>
-        <p>Welcome to a world where humans and demons coexist. Souls harboring strong emotions and deep regrets at their time of death are transformed into archdemons. Archdemons have the power to corrupt the foundation of the world and contaminate their surroundings. Creatures tainted by this demonic power turn into lowly monsters that operate solely on raw instinct.</p>
-        <p>Faced with the threat to the world posed by five extremely powerful demon girls, the High Priestess is forced to dispatch Homura Hime—the "Flame Princess" and the strongest exorcist of them all—and her aide, Ann, who are now entrusted with the divine mission of purifying the world and defeating all demons.</p>
+        <p>Welcome to a world where humans and demons coexist. Souls harboring strong emotions and deep regrets at their time of death are transformed into archdemons. These powerful beings corrupt the world and spread darkness.</p>
+        <p>As five fearsome demon girls threaten existence, the High Priestess entrusts Homura Hime—the "Flame Princess"—and her loyal aide Ann with the sacred duty of purging evil and restoring balance.</p>
     </section>
     
     <section id="media" class="gallery">
@@ -95,11 +132,12 @@
     
     <section id="features">
         <h2>Game Features</h2>
+        <p>Prepare yourself for an action-packed adventure with breathtaking anime visuals and fast-paced combat.</p>
         <ul>
-            <li>Immerse yourself in exhilarating and intense combo attack action</li>
-            <li>Survive challenging and beautiful 3D bullet hell attacks</li>
-            <li>Defeat archdemon girls to unlock special weapons and equipment</li>
-            <li>Take down the demons and reveal the truth about this world</li>
+            <li>Engage in exhilarating combo-based combat</li>
+            <li>Survive beautiful yet deadly 3D bullet hell attacks</li>
+            <li>Defeat powerful archdemon girls to gain new weapons</li>
+            <li>Unravel the secrets behind the world's corruption</li>
         </ul>
     </section>
     
@@ -109,6 +147,7 @@
     
     <footer>
         <p>&copy; 2025 Homura Hime. All rights reserved.</p>
+        <a href="https://yourwebsite.com/download" class="bottom-download">Download Beta</a>
     </footer>
 </body>
 </html>
