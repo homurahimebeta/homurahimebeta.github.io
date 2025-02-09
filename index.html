@@ -35,6 +35,23 @@
             margin: 0 auto 20px;
             line-height: 1.6;
         }
+        .media-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .media-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+        }
+        .media-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -44,16 +61,16 @@
         <p>Coming soon on Steam! Try the beta version on our website.</p>
     </header>
     
-    <section id="media">
-        <div>
+    <section id="media" class="media-container">
+        <div class="media-box">
             <img src="gif1.gif" alt="Homura Hime Action 1">
             <p>Adventure Mode</p>
         </div>
-        <div>
+        <div class="media-box">
             <img src="gif2.gif" alt="Homura Hime Action 2">
             <p>Battle Mode</p>
         </div>
-        <div>
+        <div class="media-box">
             <img src="gif3.gif" alt="Homura Hime Action 3">
             <p>Casual Mode</p>
         </div>
