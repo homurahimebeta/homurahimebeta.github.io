@@ -14,12 +14,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #181818;
+            background: url('website.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
         }
         header {
-            background: url('header-bg.jpg') no-repeat center center/cover;
+            background: url('website.jpg') no-repeat center center/cover;
             padding: 50px;
             position: relative;
         }
@@ -71,18 +71,32 @@
             margin: 0 auto 20px;
             line-height: 1.6;
         }
-        img, video, .gif-container {
-            width: 80%;
-            max-width: 800px;
-            margin: 30px auto;
-            display: block;
+        .media-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gif-container {
+            background: #222;
+            padding: 10px;
+            border-radius: 10px;
+            width: 30%;
+        }
+        .gif-container img {
+            width: 100%;
             border-radius: 10px;
         }
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
+        .gallery-slider {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px 0;
+        }
+        .gallery-slider img {
+            display: inline-block;
+            width: 300px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 10px;
         }
         footer {
             background: #222;
@@ -116,33 +130,32 @@
         <a href="https://yourwebsite.com/download" class="download-button">Download Beta</a>
     </header>
     
-    <section id="media" class="gallery">
-        <div class="gif-container"><img src="gif1.gif" alt="Homura Hime Action 1"></div>
+    <section id="media" class="media-container">
+        <div class="gif-container">
+            <img src="gif1.gif" alt="Homura Hime Action 1">
+            <p>Adventure Mode</p>
+        </div>
+        <div class="gif-container">
+            <img src="gif2.gif" alt="Homura Hime Action 2">
+            <p>Battle Mode</p>
+        </div>
+        <div class="gif-container">
+            <img src="gif3.gif" alt="Homura Hime Action 3">
+            <p>Casual Mode</p>
+        </div>
     </section>
     
-    <section id="about">
-        <h2>Story</h2>
-        <p>Welcome to a world where humans and demons coexist. Souls harboring strong emotions and deep regrets at their time of death are transformed into archdemons. These powerful beings corrupt the world and spread darkness.</p>
-        <p>As five fearsome demon girls threaten existence, the High Priestess entrusts Homura Hime—the "Flame Princess"—and her loyal aide Ann with the sacred duty of purging evil and restoring balance.</p>
-    </section>
-    
-    <section id="media" class="gallery">
-        <div class="gif-container"><img src="gif2.gif" alt="Homura Hime Action 2"></div>
-    </section>
-    
-    <section id="features">
-        <h2>Game Features</h2>
-        <p>Prepare yourself for an action-packed adventure with breathtaking anime visuals and fast-paced combat.</p>
-        <ul>
-            <li>Engage in exhilarating combo-based combat</li>
-            <li>Survive beautiful yet deadly 3D bullet hell attacks</li>
-            <li>Defeat powerful archdemon girls to gain new weapons</li>
-            <li>Unravel the secrets behind the world's corruption</li>
-        </ul>
-    </section>
-    
-    <section id="media" class="gallery">
-        <div class="gif-container"><img src="gif3.gif" alt="Homura Hime Action 3"></div>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-slider">
+            <img src="image1.png" alt="Gallery Image 1">
+            <img src="image2.png" alt="Gallery Image 2">
+            <img src="image3.png" alt="Gallery Image 3">
+            <img src="image4.png" alt="Gallery Image 4">
+            <img src="image5.png" alt="Gallery Image 5">
+            <img src="image6.png" alt="Gallery Image 6">
+            <img src="image7.png" alt="Gallery Image 7">
+        </div>
     </section>
     
     <footer>
